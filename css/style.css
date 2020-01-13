@@ -59,7 +59,7 @@ body {
 .projectItem {
   background-color: red; }
   .projectItem__image {
-    width: 20rem; }
+    width: 20vw; }
 
 .footer {
   background-color: #75b1bd;
