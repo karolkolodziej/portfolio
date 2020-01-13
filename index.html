@@ -12,39 +12,157 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="shortcut icon" type="image/png" href="./images/head_logo.png" />
-    <title>Portfolio | KK</title>
+    <title>Front-end Developer | KK</title>
   </head>
   <body>
     <body data-gr-c-s-loaded="true">
       <nav class="navi">
         <ul>
           <li class="navi_element">
-            <a href="#" class="navi__item">About</a>
+            <a href="#about" class="navi__item">About</a>
           </li>
           <li class="navi_element">
-            <a href="#" class="navi__item">Skils</a>
+            <a href="#skils" class="navi__item">Skils</a>
           </li>
           <li class="navi_element">
-            <a href="#" class="navi__item">Projects</a>
+            <a href="#projects" class="navi__item">Projects</a>
           </li>
-          <li class="navi_element">
-            <a href="#" class="navi__item">Contact</a>
+          <li class="navi_element u-underscore">
+            <a href="#sayHello" class="navi__item u-underscore">Say hello</a>
           </li>
         </ul>
       </nav>
 
       <header class="header">
         <div class="header__text">
-          <div class="header__text--main">Portfolio</div>
+          <div class="header__text--main ">Front-end Developer</div>
           <div class="header__text--sub">Karol Kołodziej</div>
         </div>
       </header>
 
-      <div>
-        text
-      </div>
+      <main>
+        <section class="section-about">
+          <div class="u-text-center u-padding-header">
+            <h1 class="heading-1">
+              About
+            </h1>
+          </div>
 
-      <script type="text/javascript"></script>
+          <div class="row">
+            <div class="col-1-of-2">
+              <img class="foto" alt="my-foto" src="./images/foto.jpg" />
+            </div>
+            <div class="col-1-of-2">
+              <h2 class="u-padding-header">Hi! I'm Karol</h2>
+              <p>
+                A self thought developer that loves to design and code
+                beautifully simple things. I like to keep learning, continue
+                challenging myself, and do interesting things that matter.
+              </p>
+
+              <a class="btn btn--dark" href="#" target="blank">Get my resume</a>
+              <a class="btn btn--light" href="#sayHello">Say hello</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="skils" class="section-skils">
+          <div class="u-text-center u-padding-header">
+            <h1 class="heading-1">
+              Sklils
+            </h1>
+          </div>
+
+          <div class="row">
+            <div class="col-1-of-2">
+              <h2 class="u-padding-header">Front-end</h2>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JS</p>
+              <p>React</p>
+            </div>
+            <div class="col-1-of-2">
+              <h2 class="u-padding-header">Other</h2>
+              <p>GIT</p>
+              <p>Adobe XD</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section-projects">
+          <div class="u-text-center u-padding-header">
+            <h1 class="heading-1">
+              Projects
+            </h1>
+          </div>
+
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="projetItem">
+                <h2>Pokedex</h2>
+                <img
+                  class="projectItem__image"
+                  src="./images/pokemon.png"
+                  alt="pokemon"
+                />
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="projetItem">
+                <h2>Calculator</h2>
+                <img
+                  class="projectItem__image"
+                  src="./images/money_calc.png"
+                  alt="Calculator"
+                />
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="projetItem">
+                <h2>Food Search</h2>
+                <img
+                  class="projectItem__image"
+                  src="./images/food_search.png"
+                  alt="food_search"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="sayHello" class="footer">
+        <p>Feel free to contact!</p>
+        <br />
+
+        <a
+          class="footer__ref"
+          href="https://www.linkedin.com/in/karolkolodziej/"
+          target="blank"
+        >
+          <img src="./images/linkedin.png" alt="linkedin" />
+        </a>
+        <a
+          class="footer__ref"
+          href="https://github.com/karolkolodziej"
+          target="blank"
+        >
+          <img src="./images/github-image.png" alt="github" />
+        </a>
+        <a
+          class="footer__ref"
+          href="mailto:karolkolodziej01@gmail.com"
+          target="blank"
+        >
+          <img src="./images/mail.png" alt="mail" />
+        </a>
+        <a class="footer__ref" href="#" target="blank">
+          <img src="./images/document.png" alt="cv" />
+        </a>
+        <p class="footer__copyright">
+          Copyright &copy; by Karol Kołodziej.
+        </p>
+      </footer>
     </body>
   </body>
 </html>

@@ -1,15 +1,17 @@
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: url("../../images/header_background.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   position: relative;
+  z-index: -10;
 
   &__text {
     font-size: 3rem;
+    font-weight: 500;
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
     text-align: center;
   }

@@ -1,0 +1,23 @@
+.footer {
+  background-color: $color-primary;
+  height: 15vh;
+  text-align: center;
+
+  &__ref {
+    &:not(:last-child) {
+      padding-right: 3rem;
+    }
+  }
+
+  img {
+    max-width: 5vw;
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(0px);
+    }
+  }
+}

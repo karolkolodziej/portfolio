@@ -7,7 +7,12 @@
 @import "./base/typography";
 @import "./base/utylities";
 
+@import "./components/button";
+@import "./components/projectItem";
+
+@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/navi";
+@import "./layout/grid";
 
 @import "./pages/home";
