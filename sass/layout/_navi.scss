@@ -3,6 +3,7 @@
   height: 5rem;
   width: 100%;
   display: inline-block;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   border-bottom: 0.5px solid $color-grey;

@@ -1,6 +1,6 @@
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
   position: relative;
   height: 50vh;
 
@@ -11,7 +11,7 @@
     left: 0;
     transition: all 0.5s ease;
     width: 100%;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
 
     &__inside {
@@ -40,14 +40,14 @@
     }
     &--back {
       background-color: rgba($color-backgroung-card, 0.3);
-      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
     }
   }
   &:hover &__side--front {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
 
   &:hover &__side--back {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
   }
 }

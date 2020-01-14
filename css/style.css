@@ -59,7 +59,7 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem;
+  -webkit-perspective: 150rem;
   position: relative;
   height: 50vh; }
   .card__side {
@@ -69,7 +69,7 @@ body {
     left: 0;
     transition: all 0.5s ease;
     width: 100%;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
     .card__side__inside {
       transform: translate(0, 35%); }
@@ -86,11 +86,11 @@ body {
       background-color: rgba(220, 191, 209, 0.5); }
     .card__side--back {
       background-color: rgba(162, 212, 223, 0.3);
-      transform: rotateY(180deg); }
+      -webkit-transform: rotateY(180deg); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    -webkit-transform: rotateY(180deg); }
   .card:hover .card__side--back {
-    transform: rotateY(0deg); }
+    -webkit-transform: rotateY(0deg); }
 
 .footer {
   background-color: rgba(117, 177, 189, 0.5);
@@ -102,8 +102,10 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%; }
-  .footer__ref:not(:last-child) {
-    padding-right: 2vw; }
+  .footer__ref {
+    text-decoration: none; }
+    .footer__ref:not(:last-child) {
+      padding-right: 2vw; }
   .footer img {
     max-width: 3rem; }
     .footer img:hover {
@@ -137,6 +139,7 @@ body {
   height: 5rem;
   width: 100%;
   display: inline-block;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   border-bottom: 0.5px solid #797b7e;

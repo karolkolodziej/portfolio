@@ -11,6 +11,8 @@
     left: 50%;
   }
   &__ref {
+    text-decoration: none;
+
     &:not(:last-child) {
       padding-right: 2vw;
     }
