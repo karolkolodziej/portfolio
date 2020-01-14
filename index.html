@@ -40,7 +40,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section id="about" class="section-about">
         <div class="u-text-center u-padding-header">
           <h1 class="heading-1">
             About
@@ -59,7 +59,7 @@
               myself, and do interesting things that matter.
             </p>
 
-            <a class="btn btn--dark" href="#" target="blank">Get my resume</a>
+            <a class="btn btn--dark" href="https://drive.google.com/file/d/15PK_Kj4Y17fPhisPIksiVUVWu9lShE0W/view?usp=sharing" target="blank">Get my resume</a>
             <a class="btn btn--light" href="#sayHello">Say hello</a>
           </div>
         </div>
@@ -88,7 +88,9 @@
         </div>
       </section>
 
+
       <section id="projects" class="section-projects">
+        
         <div class="u-text-center u-padding-header">
           <h1 class="heading-1">
             Projects
@@ -96,68 +98,162 @@
         </div>
 
         <div class="row">
-          <div class="col-1-of-3">
-            <div class="projetItem">
-              <h2>Pokedex</h2>
-              <img
-                class="projectItem__image"
-                src="./images/pokemon.png"
-                alt="pokemon"
-              />
+
+          <div class="col-1-of-2">
+              <h2 >Pokedex</h2>
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <img
+                  class="card__side__image"
+                  src="./images/pokemon.png"
+                  alt="pokemon"
+                />                     
+                </div>
+                <div class="card__side card__side--back">
+                  <div class="card__side__inside">
+
+                    <div class="card__side__header">
+                      <h3> Languages</h3>
+                      <p>React, Redux</p>
+                    </div>
+                    <div class="card__side__description">
+                      <p>Simple app based on API request showing Your favourite pokemon.</p>
+                      <a class="btn btn--dark" href="https://github.com/karolkolodziej/pokedex" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                      <a class="btn btn--light" href="https://karolkolodziej.github.io/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
+                    </div>
+                  </div>
+                 </div>
             </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="projetItem">
-              <h2>Calculator</h2>
-              <img
-                class="projectItem__image"
-                src="./images/money_calc.png"
-                alt="Calculator"
-              />
             </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="projetItem">
-              <h2>Food Search</h2>
-              <img
-                class="projectItem__image"
+            <div class="col-1-of-2">
+            
+              <h2 >Calculator</h2>
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <img
+                  class="card__side__image"
+                  src="./images/money_calc.png"
+                  alt="calculator"
+                />
+                     
+                </div>
+                <div class="card__side card__side--back">
+                  <div class="card__side__inside">
+                    <div class="card__side__header">
+  
+                      <h3> Languages</h3>
+                      <p>React, Redux</p>
+                    </div>
+                    <div class="card__side__description">
+                      <p>Calculate euro to pln.</p>
+                      <a class="btn btn--dark" href="https://github.com/karolkolodziej/currency_calculator" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                      <a class="btn btn--light" href="https://karolkolodziej.github.io/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
+                    </div>
+                  </div>
+                 </div>
+            </div>
+            </div>
+          
+          
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            
+            <h2 >Food Seach</h2>
+            <div class="card">
+              <div class="card__side card__side--front">
+                <img
+                class="card__side__image"
                 src="./images/food_search.png"
                 alt="food_search"
               />
-            </div>
+                   
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side__inside">
+                  <div class="card__side__header">
+  
+                    <h3> Languages</h3>
+                    <p>JS</p>
+                  </div>
+                  <div class="card__side__description">
+                    <p>Search food.</p>
+                    <a class="btn btn--dark" href="https://github.com/karolkolodziej/forkify-app" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                    <a class="btn btn--light" href="https://karolkolodziej.github.io/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
+                  </div>
+                </div>
+               </div>
+          </div>
+          </div>
+
+          <div class="col-1-of-2">
+            
+            <h2 >Homepage</h2>
+            <div class="card">
+              <div class="card__side card__side--front">
+                <img
+                class="card__side__image"
+                src="./images/homepage.png"
+                alt="food_search"
+              />
+                   
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__side__inside">
+                  <div class="card__side__header">
+                    <h3> Languages</h3>
+                    <p>HTML, SASS</p>
+                  </div>
+                  <div class="card__side__description">
+                    <p>My home page.</p>
+                    <a class="btn btn--dark" href="https://github.com/karolkolodziej/portfolio" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                  </div>
+                </div>
+               </div>
+          </div>
+          </div>                 
           </div>
         </div>
       </section>
+
+
+
+      
+      
     </main>
 
     <footer id="sayHello" class="footer">
       <p>Feel free to contact!</p>
-      <br />
 
-      <a
-        class="footer__ref"
-        href="https://www.linkedin.com/in/karolkolodziej/"
-        target="blank"
-      >
-        <img src="./images/linkedin.png" alt="linkedin" />
-      </a>
-      <a
-        class="footer__ref"
-        href="https://github.com/karolkolodziej"
-        target="blank"
-      >
-        <img src="./images/github-image.png" alt="github" />
-      </a>
-      <a
-        class="footer__ref"
-        href="mailto:karolkolodziej01@gmail.com"
-        target="blank"
-      >
-        <img src="./images/mail.png" alt="mail" />
-      </a>
-      <a class="footer__ref" href="#" target="blank">
-        <img src="./images/document.png" alt="cv" />
-      </a>
+      
+      <div class="footer__links">
+
+        <a
+          class="footer__ref"
+          href="https://www.linkedin.com/in/karolkolodziej/"
+          target="blank"
+        >
+          <img src="./images/linkedin.png" alt="linkedin" />
+        </a>
+        <a
+          class="footer__ref"
+          href="https://github.com/karolkolodziej"
+          target="blank"
+        >
+          <img src="./images/github-image.png" alt="github" />
+        </a>
+        <a
+          class="footer__ref"
+          href="mailto:karolkolodziej01@gmail.com"
+          target="blank"
+        >
+          <img src="./images/mail.png" alt="mail" />
+        </a>
+        <a class="footer__ref" href="https://drive.google.com/file/d/15PK_Kj4Y17fPhisPIksiVUVWu9lShE0W/view?usp=sharing" target="blank">
+          <img src="./images/document.png" alt="cv" />
+        </a>
+      </div>
       <p class="footer__copyright">
         Copyright &copy; by Karol Kołodziej.
       </p>
