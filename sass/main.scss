@@ -1,8 +1,6 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
-@import "./abstracts/functions.scss";
 
-@import "./base/animations";
 @import "./base/base";
 @import "./base/typography";
 @import "./base/utylities";
@@ -11,8 +9,8 @@
 @import "./components/cards";
 
 @import "./layout/footer";
+@import "./layout/grid";
 @import "./layout/header";
 @import "./layout/navi";
-@import "./layout/grid";
 
 @import "./pages/home";

@@ -1,5 +1,5 @@
 .section-about {
-  margin-top: 10vh;
+  padding-bottom: 10rem;
 
   img {
     width: 20vw;
@@ -8,7 +8,10 @@
 }
 
 .section-skils {
+  background-color: $color-primary;
+  padding-bottom: 10rem;
 }
 
 .section-projects {
+  padding-bottom: 10rem;
 }

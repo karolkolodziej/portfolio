@@ -23,12 +23,12 @@
   }
 
   &--dark {
-    background-color: $color-secondary;
+    background-color: rgba($color-secondary, 1.5);
     color: $color-text-1;
   }
 
   &--light {
-    background-color: rgba($color-secondary, 0.7);
+    background-color: $color-secondary;
     color: $color-text-1;
   }
 }

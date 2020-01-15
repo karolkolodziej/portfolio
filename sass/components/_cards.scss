@@ -36,10 +36,10 @@
     }
 
     &--front {
-      background-color: rgba($color-secondary, 0.5);
+      background-color: $color-secondary;
     }
     &--back {
-      background-color: rgba($color-backgroung-card, 0.3);
+      background-color: $color-primary;
       -webkit-transform: rotateY(180deg);
     }
   }
