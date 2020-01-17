@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <link
       href="https://fonts.googleapis.com/css?family=Gayathri&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-
     <link rel="shortcut icon" type="image/png" href="./images/head_logo.png" />
     <title>Front-end Developer | KK</title>
   </head>
+
   <body>
     <nav class="navi">
       <ul>
@@ -40,6 +39,7 @@
     </header>
 
     <main>
+
       <section id="about" class="section-about">
         <div class="u-text-center u-padding-header">
           <h1 class="heading-1">
@@ -48,19 +48,23 @@
         </div>
 
         <div class="row">
-          <div class="col-1-of-2">
-            <img class="foto" alt="my-foto" src="./images/foto.jpg" />
-          </div>
-          <div class="col-1-of-2">
-            <h2 class="u-padding-header">Hi! I'm Karol</h2>
-            <p>
-              A self thought developer that loves to design and code beautifully
-              simple things. I like to keep learning, continue challenging
-              myself, and do interesting things that matter.
-            </p>
-
-            <a class="btn btn--dark" href="https://drive.google.com/file/d/15PK_Kj4Y17fPhisPIksiVUVWu9lShE0W/view?usp=sharing" target="blank">Get my resume</a>
-            <a class="btn btn--light" href="#sayHello">Say hello</a>
+            <div class="col-1-of-2">
+                <img  alt="my-foto" src="./images/foto.jpg" />
+            </div>
+            <div class="col-1-of-2">
+              <div class="section-about__text">
+                <div class="section-about__text__content">
+                  <h2 class="u-padding-header">Hi! I'm Karol</h2>
+                  <p>
+                    A self thought developer that loves to design and code beautifully
+                    simple things. I like to keep learning, continue challenging
+                    myself, and do interesting things that matter.
+                  </p>
+                  <a class="btn btn--dark" href="https://drive.google.com/file/d/15PK_Kj4Y17fPhisPIksiVUVWu9lShE0W/view?usp=sharing" target="blank">Get my resume</a>
+                  <a class="btn btn--light" href="#sayHello">Say hello</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -68,7 +72,7 @@
       <section id="skils" class="section-skils">
         <div class="u-text-center u-padding-header">
           <h1 class="heading-1">
-            Sklils
+            Skills
           </h1>
         </div>
 
@@ -76,9 +80,10 @@
           <div class="col-1-of-2">
             <h2 class="u-padding-header">Front-end</h2>
             <p>HTML</p>
-            <p>CSS</p>
+            <p>CSS/SASS</p>
             <p>JS</p>
             <p>React</p>
+            <p>Redux</p>
           </div>
           <div class="col-1-of-2">
             <h2 class="u-padding-header">Other</h2>
@@ -88,9 +93,7 @@
         </div>
       </section>
 
-
-      <section id="projects" class="section-projects">
-        
+      <section id="projects" class="section-projects">     
         <div class="u-text-center u-padding-header">
           <h1 class="heading-1">
             Projects
@@ -98,137 +101,120 @@
         </div>
 
         <div class="row">
-
           <div class="col-1-of-2">
-              <h2 >Pokedex</h2>
-              <div class="card">
-                <div class="card__side card__side--front">
-                  <img
-                  class="card__side__image"
-                  src="./images/pokemon.png"
-                  alt="pokemon"
-                />                     
-                </div>
-                <div class="card__side card__side--back">
-                  <div class="card__side__inside">
-
-                    <div class="card__side__header">
-                      <h3> Languages</h3>
-                      <p>React, Redux</p>
-                    </div>
-                    <div class="card__side__description">
-                      <p>Simple app based on API request showing Your favourite pokemon.</p>
-                      <a class="btn btn--dark" href="https://github.com/karolkolodziej/pokedex" target="blank"><img src="./images/github-image.png" alt="github" /></a>
-                      <a class="btn btn--light" href="https://karolkolodziej.github.io/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
-                    </div>
-                  </div>
-                 </div>
-            </div>
-            </div>
-            <div class="col-1-of-2">
-            
-              <h2 >Calculator</h2>
-              <div class="card">
-                <div class="card__side card__side--front">
-                  <img
-                  class="card__side__image"
-                  src="./images/money_calc.png"
-                  alt="calculator"
-                />
-                     
-                </div>
-                <div class="card__side card__side--back">
-                  <div class="card__side__inside">
-                    <div class="card__side__header">
-  
-                      <h3> Languages</h3>
-                      <p>React, Redux</p>
-                    </div>
-                    <div class="card__side__description">
-                      <p>Calculate euro to pln.</p>
-                      <a class="btn btn--dark" href="https://github.com/karolkolodziej/currency_calculator" target="blank"><img src="./images/github-image.png" alt="github" /></a>
-                      <a class="btn btn--light" href="https://karolkolodziej.github.io/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
-                    </div>
-                  </div>
-                 </div>
-            </div>
-            </div>
-          
-          
-        </div>
-      </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            
-            <h2 >Food Seach</h2>
+              <h2 class="u-padding-header" >Pokedex</h2>
             <div class="card">
+                <div class="card__side card__side--front">
+                    <img
+                    class="card__side__image"
+                    src="./images/pokemon.png"
+                    alt="pokemon"
+                  />                     
+                </div>
+                <div class="card__side card__side--back">
+                  <div class="card__side__inside">
+                    <div class="card__side__header">
+                      <h4> Languages</h4>
+                      <h4>React, Redux</h4>
+                    </div>
+                    <div class="card__side__description">
+                      <p>Simple app based on API request showing Your favorite pokemon.</p>
+                      <a class="btn btn--dark" href="https://github.com/karolkolodziej/pokedex" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                      <a class="btn btn--light" href="https://karolkolodziej.github.io/pokedex/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+           </div>
+           
+            <div class="col-1-of-2">            
+                <h2 class="u-padding-header" >Calculator</h2>
+              <div class="card">
+                <div class="card__side card__side--front">
+                    <img
+                    class="card__side__image"
+                    src="./images/money_calc.png"
+                    alt="calculator"
+                  />                     
+                </div>
+                <div class="card__side card__side--back">
+                  <div class="card__side__inside">
+                    <div class="card__side__header">
+                      <h4> Languages</h4>
+                      <h4>React, Redux</h4>
+                    </div>
+                    <div class="card__side__description">
+                      <p>React currency calculator. Add, remove and sum Your transactions.</p>
+                      <a class="btn btn--dark" href="https://github.com/karolkolodziej/currency_calculator" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                      <a class="btn btn--light" href="https://karolkolodziej.github.io/currency_calculator" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-1-of-2"> 
+              <h2 class="u-padding-header" >Food Seach</h2>
+             <div class="card">
               <div class="card__side card__side--front">
-                <img
-                class="card__side__image"
-                src="./images/food_search.png"
-                alt="food_search"
-              />
-                   
+                  <img
+                  class="card__side__image"
+                  src="./images/food_search.png"
+                  alt="food_search"
+                />                   
               </div>
               <div class="card__side card__side--back">
                 <div class="card__side__inside">
-                  <div class="card__side__header">
-  
-                    <h3> Languages</h3>
-                    <p>JS</p>
+                  <div class="card__side__header">  
+                    <h4> Languages</h4>
+                    <h4>JS</h4>
                   </div>
                   <div class="card__side__description">
-                    <p>Search food.</p>
-                    <a class="btn btn--dark" href="https://github.com/karolkolodziej/forkify-app" target="blank"><img src="./images/github-image.png" alt="github" /></a>
-                    <a class="btn btn--light" href="https://karolkolodziej.github.io/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
+                    <p>App from Jonas Schmedtmann course. Allowed me to really understand JS.</p>
+                    <a class="btn btn--dark" href="https://github.com/karolkolodziej/food-search/" target="blank"><img src="./images/github-image.png" alt="github" /></a>
+                    <a class="btn btn--light" href="https://karolkolodziej.github.io/food-search/" target="blank"><img src="./images/online-logo.png" alt="online" /></a>
                   </div>
                 </div>
                </div>
-          </div>
+            </div>
           </div>
 
           <div class="col-1-of-2">
-            
-            <h2 >Homepage</h2>
+            <h2 class="u-padding-header" >Homepage</h2>
             <div class="card">
               <div class="card__side card__side--front">
-                <img
-                class="card__side__image"
-                src="./images/homepage.png"
-                alt="food_search"
-              />
-                   
+                  <img
+                  class="card__side__image"
+                  src="./images/homepage.png"
+                  alt="food_search"
+                />
               </div>
               <div class="card__side card__side--back">
                 <div class="card__side__inside">
                   <div class="card__side__header">
-                    <h3> Languages</h3>
-                    <p>HTML, SASS</p>
+                    <h4> Languages</h4>
+                    <h4>HTML, SASS</h4>
                   </div>
                   <div class="card__side__description">
-                    <p>My home page.</p>
+                    <p>My portfolio made in custom style using sass.</p>
                     <a class="btn btn--dark" href="https://github.com/karolkolodziej/portfolio" target="blank"><img src="./images/github-image.png" alt="github" /></a>
                   </div>
                 </div>
                </div>
-          </div>
-          </div>                 
+              </div>
+            </div>                 
           </div>
         </div>
-      </section>
-
-
-
-      
+      </section>   
       
     </main>
 
     <footer id="sayHello" class="footer">
-      <p>Feel free to contact!</p>
-
+      <p class="u-padding-header-top">Feel free to contact!</p>
       
       <div class="footer__links">
-
         <a
           class="footer__ref"
           href="https://www.linkedin.com/in/karolkolodziej/"
@@ -253,10 +239,24 @@
         <a class="footer__ref" href="https://drive.google.com/file/d/15PK_Kj4Y17fPhisPIksiVUVWu9lShE0W/view?usp=sharing" target="blank">
           <img src="./images/document.png" alt="cv" />
         </a>
+
       </div>
       <p class="footer__copyright">
         Copyright &copy; by Karol Kołodziej.
       </p>
     </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+      });
+    </script>
+
   </body>
 </html>

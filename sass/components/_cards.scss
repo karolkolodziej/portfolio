@@ -1,37 +1,39 @@
 .card {
-  perspective: 150rem;
-  -webkit-perspective: 150rem;
   position: relative;
   height: 50vh;
+  perspective: 150rem;
+  -webkit-perspective: 150rem;
 
   &__side {
-    height: 50vh;
     position: absolute;
     top: 0;
     left: 0;
-    transition: all 0.5s ease;
+    height: 50vh;
     width: 100%;
-    -webkit-backface-visibility: hidden;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+    -webkit-backface-visibility: hidden;
+    transition: all 0.5s ease;
 
     &__inside {
-      transform: translate(0, 35%);
+      width: 100%;
+      @include absCenter;
     }
 
     &__image {
-      max-width: 10vw;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-    }
-
-    &__header {
-      padding-bottom: 2rem;
+      @include absCenter;
+      max-width: 60%;
     }
 
     &__description {
+      font-size: 1.3rem;
+
+      a {
+        height: 5rem;
+        width: 5rem;
+      }
       img {
-        width: 4vw;
+        @include absCenter;
+        width: 80%;
       }
     }
 

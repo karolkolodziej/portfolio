@@ -1,18 +1,18 @@
 .navi {
-  background-color: $color-white;
-  height: 5rem;
-  width: 100%;
   display: inline-block;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
+  left: 0;
+  padding-bottom: 1.5rem;
+  background-color: $color-white;
   border-bottom: 0.5px solid $color-grey;
   text-align: center;
   z-index: 20;
 
   &__item {
-    text-decoration: none;
     color: $color-text-1;
+    text-decoration: none;
   }
 
   &_element {
@@ -31,6 +31,7 @@
     &:focus {
       transform: translateY(0px);
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
+      border-radius: 0.5rem;
     }
   }
 }

@@ -1,17 +1,17 @@
 body {
+  box-sizing: border-box;
+  padding: 0 0.5rem 0 0.5rem;
+  background-color: $color-backgroung;
+  color: $color-text-1;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: $color-text-1;
-  padding: 0 0.5rem 0 0.5rem;
-  box-sizing: border-box;
-  background-color: $color-backgroung;
 }
 
 .heading-1 {
   display: inline-block;
-  letter-spacing: 0.2rem;
-  font-size: 3.5rem;
   padding: 10rem 0 5rem 0;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
 }

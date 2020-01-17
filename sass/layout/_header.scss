@@ -1,17 +1,26 @@
 .header {
-  height: 95vh;
+  position: relative;
+  height: 100vh;
+  width: 100%;
   background-image: url(../images/header_background.jpg);
   background-size: cover;
   background-position: bottom;
-  position: relative;
 
   &__text {
-    font-size: 3rem;
-    font-weight: 500;
     position: absolute;
+    transform: translate(-50%, -50%);
     top: 40%;
     left: 35%;
-    transform: translate(-50%, -50%);
     text-align: center;
+
+    &--main {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    &--sub {
+      font-size: 3rem;
+      font-weight: 500;
+    }
   }
 }
