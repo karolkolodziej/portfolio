@@ -1,3 +1,20 @@
+/*
+0 - 600px-Phone
+600 - 900px-Tablet portrait
+900 - 1200px-Tablet landscape
+[1200 - 1800]-normal styles apply
+1800px + -Big desktop
+
+$breakpoints:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +24,12 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -35,7 +58,7 @@ body {
   padding-bottom: 1rem; }
 
 .u-padding-header-top {
-  padding-top: 0.2rem; }
+  padding-top: 1rem; }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
@@ -85,9 +108,10 @@ body {
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
-      max-width: 60%; }
+      max-width: 50%;
+      max-height: 50%; }
     .card__side__description {
-      font-size: 1.3rem; }
+      font-size: 1.6rem; }
       .card__side__description a {
         height: 5rem;
         width: 5rem; }
@@ -109,7 +133,7 @@ body {
 
 .footer {
   position: relative;
-  height: 15vh;
+  height: 15rem;
   text-align: center;
   background-color: rgba(200, 224, 228, 0.7); }
   .footer__links {
@@ -142,13 +166,24 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 37.5em) {
+    .row {
+      margin-bottom: 4rem; } }
   .row [class^="col-"] {
     float: left;
     text-align: center; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 3rem; }
+      margin-right: 5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .row [class^="col-"] {
+        margin-bottom: 4rem;
+        width: 100% !important;
+        padding: 0 1rem; } }
   .row .col-1-of-2 {
-    width: calc((100% - 3rem) / 2); }
+    width: calc((100% - 5rem) / 2); }
 
 .header {
   position: relative;

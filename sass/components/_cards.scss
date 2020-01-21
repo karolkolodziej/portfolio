@@ -21,11 +21,12 @@
 
     &__image {
       @include absCenter;
-      max-width: 60%;
+      max-width: 50%;
+      max-height: 50%;
     }
 
     &__description {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
 
       a {
         height: 5rem;

@@ -4,12 +4,24 @@
   margin-bottom: $gutter-verticval;
   @include clearfix;
 
+  @include respond(phone) {
+    margin-bottom: $gutter-verticval-mobile;
+  }
+
   [class^="col-"] {
     float: left;
     text-align: center;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include respond(phone) {
+        margin-right: 0;
+      }
+    }
+    @include respond(phone) {
+      margin-bottom: $gutter-verticval-mobile;
+      width: 100% !important;
+      padding: 0 1rem;
     }
   }
 
